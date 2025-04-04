@@ -53,7 +53,7 @@ keywords = [
 
 [project.urls]
 Homepage = "https://github.com/datakatalyst/aiosimon-io"
-Documentation = "https://readthedocs.org/projects/aiosimon-io/"
+Documentation = "https://aiosimon-io.readthedocs.io/en/latest/"
 Repository = "https://github.com/datakatalyst/aiosimon-io"
 Issues = "https://github.com/datakatalyst/aiosimon-io/issues"
 
