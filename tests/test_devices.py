@@ -33,6 +33,7 @@ def device():
         ),
     )
 
+Device.model_rebuild()
 
 def test_get_type(device):
     """Test that the device type is correctly retrieved."""
