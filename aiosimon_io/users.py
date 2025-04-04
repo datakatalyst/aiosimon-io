@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 class User(BaseModel):
     """Represents a user in the Simon iO system.
 
-    :canonical: aiosimon_io.User
+    :canonical: aiosimon_io.users.User
     """
 
     endpoint: ClassVar[str] = USER_ENDPOINT

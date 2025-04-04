@@ -44,7 +44,7 @@ class AbstractAuth(ABC):
     This class provides a framework for handling authentication and making
     HTTP requests with an access token.
 
-    :canonical: aiosimon_io.AbstractAuth
+    :canonical: aiosimon_io.auth.AbstractAuth
     """
 
     def __init__(self, websession: aiohttp.ClientSession, host: str):
@@ -160,7 +160,7 @@ class SimonAuth(AbstractAuth):
     This class manages access and refresh tokens for interacting with the
     Simon Cloud API.
 
-    :canonical: aiosimon_io.SimonAuth
+    :canonical: aiosimon_io.auth.SimonAuth
     """
 
     def __init__(
