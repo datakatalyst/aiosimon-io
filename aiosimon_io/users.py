@@ -38,7 +38,10 @@ logger = logging.getLogger(__name__)
 
 
 class User(BaseModel):
-    """Represents a user in the Simon iO system."""
+    """Represents a user in the Simon iO system.
+
+    :canonical: aiosimon_io.User
+    """
 
     endpoint: ClassVar[str] = USER_ENDPOINT
     api_client: ClassVar[AbstractAuth]

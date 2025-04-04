@@ -41,7 +41,10 @@ logger = logging.getLogger(__name__)
 
 
 class Device(BaseModel):
-    """Represents a device in the Simon iO system."""
+    """Represents a device in the Simon iO system.
+
+    :canonical: aiosimon_io.Device
+    """
 
     _hub_devices_endpoint: ClassVar[str] = HUB_DEVICES_ENDPOINT
     _sns_devices_endpoint: ClassVar[str] = SNS_DEVICES_ENDPOINT

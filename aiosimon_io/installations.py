@@ -62,7 +62,10 @@ class Elements(BaseModel):
 
 
 class Installation(BaseModel):
-    """Represents an installation in the Simon iO system."""
+    """Represents an installation in the Simon iO system.
+
+    :canonical: aiosimon_io.Installation
+    """
 
     _installations_endpoint: ClassVar[str] = INSTALLATIONS_ENDPOINT
     _sns_elements_endpoint: ClassVar[str] = SNS_ELEMENTS_ENDPOINT
