@@ -18,7 +18,7 @@ dev:
 	@command -v pip > /dev/null 2>&1 || (echo "pip is not installed. Please install it first." && exit 1)
 	@rm -fr venv
 	@python -m venv venv
-	@python -m pip install -e .[dev]
+	@python -m pip install -e .[build,dev,docs,test]
 	@echo "Development environment set up. Activate it with 'source venv/bin/activate' (Linux/Mac) or 'venv\Scripts\activate' (Windows)."
 
 # Run tests
