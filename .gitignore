@@ -115,7 +115,7 @@ dmypy.json
 .pyre/
 
 # VS Code
-.vscode/
+#.vscode/
 
 # Local environment variables
 .env.local

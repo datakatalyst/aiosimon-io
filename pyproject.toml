@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling >= 1.27, < 2.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aiosimon-io"
+version = "0.1.0"
+description = "An unofficial async Python client for Simon iO smart home devices"
+authors = [
+    { name = "Datakatalyst" }
+]
+maintainers = []
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "aiohttp >= 3.10, < 4.0",
+    "asyncio >= 3.4, < 4.0",
+    "pydantic >= 2.10, < 3.0",
+]
+classifiers = [
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 4 - Beta",
+
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Home Automation",
+
+    # Indicate the OSI approved license your project uses
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+
+    # Specify the Python versions you support here.
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = [
+    "simon",
+    "simon io",
+    "smart home",
+    "home automation",
+    "asyncio",
+    "aiohttp",
+    "pydantic"
+]
+
+[project.urls]
+Homepage = "https://github.com/datakatalyst/aiosimon-io"
+Documentation = "https://readthedocs.org/projects/aiosimon-io/"
+Repository = "https://github.com/datakatalyst/aiosimon-io"
+Issues = "https://github.com/datakatalyst/aiosimon-io/issues"
+
+[project.optional-dependencies]
+dev = [
+    "aioresponses >= 0.7, < 1.0",
+    "black >= 24.8, < 25.0",
+    "build >= 1.2, < 2.0",
+    "flake8 >= 7.1, < 8.0",
+    "isort >= 5.13, < 6.0",
+    "mypy >= 1.14, < 2.0",
+    "pytest >= 8.3, < 9.0",
+    "pytest-asyncio >= 0.24, < 1.0",
+    "pytest-cov >= 5.0, < 6.0",
+    "pytest-mock >= 3.14, < 4.0",
+    "sphinx >= 7.1, < 8.0",
+    "sphinx-autodoc-typehints >= 2.0, < 3.0",
+    "sphinx-rtd-theme >= 3.0, < 4.0",
+    "twine >= 6.1, < 7.0",
+    "validate-pyproject >= 0.24, < 1.0",
+]
+
+[tool]
+isort = {profile = "black"}
+pytest = {ini_options = {asyncio_default_fixture_loop_scope = "function"}}
