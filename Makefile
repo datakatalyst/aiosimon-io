@@ -46,7 +46,7 @@ check: test
 	@isort --check-only aiosimon_io tests > /dev/null 2>&1 && echo "- OK" || (echo "- isort failed:" && isort --check-only aiosimon_io tests)
 	@echo "Running mypy..."
 	@command -v mypy > /dev/null 2>&1 || (echo "mypy is not installed. Please install it first." && exit 1)
-	@mypy aiosimon_io/ > /dev/null 2>&1 && echo "- OK" || (echo "- mypy failed:" && mypy aiosimon_io/)
+	@mypy --strict aiosimon_io/ > /dev/null 2>&1 && echo "- OK" || (echo "- mypy failed:" && mypy --strict aiosimon_io/)
 	@echo "Running validate-pyproject..."
 	@command -v validate-pyproject > /dev/null 2>&1 || (echo "validate-pyproject is not installed. Please install it first." && exit 1)
 	@validate-pyproject pyproject.toml > /dev/null 2>&1 && echo "- OK" || (echo "- validate-pyproject failed:" && validate-pyproject pyproject.toml)
