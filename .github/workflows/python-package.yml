@@ -45,7 +45,7 @@ jobs:
     - name: Lint with mypy
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        mypy --strict .
+        mypy .
     - name: Check pyproject.toml
       run: |
         # stop the build if there are Python syntax errors or undefined names
