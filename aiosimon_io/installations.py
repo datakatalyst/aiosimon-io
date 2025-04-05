@@ -412,3 +412,8 @@ class Installation(BaseModel):
 
         else:
             return True if self._reachable.type == "LAN" else False
+
+
+Elements.model_rebuild()
+Installation.model_rebuild()
+Device.model_rebuild()

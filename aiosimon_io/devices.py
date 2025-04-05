@@ -61,7 +61,7 @@ class Device(BaseModel):
     socket: Optional[dict] = None
     deviceConfigs: Optional[dict] = None
     favoriteExperience: Optional[int] = None
-    installation: Installation
+    installation: "Installation"
 
     def get_type(self) -> Optional[str]:
         """
