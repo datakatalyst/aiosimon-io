@@ -1,3 +1,11 @@
+Module contents
+===============
+
+.. automodule:: aiosimon_io
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 aiosimon\_io package
 ====================
 
@@ -5,7 +13,7 @@ Submodules
 ----------
 
 aiosimon\_io.auth module
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: aiosimon_io.auth
    :members:
@@ -13,7 +21,7 @@ aiosimon\_io.auth module
    :show-inheritance:
 
 aiosimon\_io.const module
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: aiosimon_io.const
    :members:
@@ -21,7 +29,7 @@ aiosimon\_io.const module
    :show-inheritance:
 
 aiosimon\_io.devices module
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: aiosimon_io.devices
    :members:
@@ -29,7 +37,7 @@ aiosimon\_io.devices module
    :show-inheritance:
 
 aiosimon\_io.installations module
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: aiosimon_io.installations
    :members:
@@ -37,7 +45,7 @@ aiosimon\_io.installations module
    :show-inheritance:
 
 aiosimon\_io.logging\_config module
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: aiosimon_io.logging_config
    :members:
@@ -45,17 +53,9 @@ aiosimon\_io.logging\_config module
    :show-inheritance:
 
 aiosimon\_io.users module
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: aiosimon_io.users
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: aiosimon_io
    :members:
    :undoc-members:
    :show-inheritance:

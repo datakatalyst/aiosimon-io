@@ -14,6 +14,8 @@ def setup_logging(level: Union[int, str] = logging.DEBUG) -> None:
 
     Args:
         level (Union[int, str]): Logging level, can be an integer or string.
+
+    :canonical: aiosimon_io.logging_config.setup_logging()
     """
     logging.basicConfig(
         level=level,
